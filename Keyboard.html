@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .keyboard {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-gap: 5px;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+    .key {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    #output {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+      min-height: 50px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<div id="output"></div>
+<script>
+  function appendToOutput(text) {
+    document.getElementById('output').innerText += text;
+  }
+  function clearOutput() {
+    document.getElementById('output').innerText = '';
+  }
+</script>
+
+<body>
+  <div class="keyboard">
+    <div class="key" onclick="appendToOutput('Ꭺ')">Ꭺ</div>
+    <div class="key" onclick="appendToOutput('Ᏼ')">Ᏼ</div>
+    <div class="key" onclick="appendToOutput('Ꮯ')">Ꮯ</div>
+    <div class="key" onclick="appendToOutput('Ꭰ')">Ꭰ</div>
+    <div class="key" onclick="appendToOutput('Ꭼ')">Ꭼ</div>
+    <div class="key" onclick="appendToOutput('Ꮁ̵')">Ꮁ̵</div>
+    <div class="key" onclick="appendToOutput('Ꮹ')">Ꮹ</div>
+    <div class="key" onclick="appendToOutput('Ꮋ')">Ꮋ</div>
+    <div class="key" onclick="appendToOutput('Ꮠ')">Ꮠ</div>
+    <div class="key" onclick="appendToOutput('Ꮣ')">Ꮣ</div>
+    <div class="key" onclick="appendToOutput('Ꮰ')">Ꮰ</div>
+    <div class="key" onclick="appendToOutput('Ꮶ')">Ꮶ</div>
+    <div class="key" onclick="appendToOutput('Ꮮ')">Ꮮ</div>
+    <div class="key" onclick="appendToOutput('Ꮇ')">Ꮇ</div>
+    <div class="key" onclick="appendToOutput('ℕ')">ℕ</div>
+    <div class="key" onclick="appendToOutput('Ꮻ')">Ꮻ</div>
+    <div class="key" onclick="appendToOutput('Ꭷ')">Ꭷ</div>
+    <div class="key" onclick="appendToOutput('Ꮲ')">Ꮲ</div>
+    <div class="key" onclick="appendToOutput('ℚ')">ℚ</div>
+    <div class="key" onclick="appendToOutput('Ꭱ')">Ꭱ</div>
+    <div class="key" onclick="appendToOutput('Ꮥ')">Ꮥ</div>
+    <div class="key" onclick="appendToOutput('Ꭶ')">Ꭶ</div>
+    <div class="key" onclick="appendToOutput('Ꭲ')">Ꭲ</div>
+    <div class="key" onclick="appendToOutput('Ꮜ')">Ꮜ</div>
+    <div class="key" onclick="appendToOutput('Ꮴ')">Ꮴ</div>
+    <div class="key" onclick="appendToOutput('Ꮤ')">Ꮤ</div>
+    <div class="key" onclick="appendToOutput('ㄨ')">ㄨ</div>
+    <div class="key" onclick="appendToOutput('Ꮍ')">Ꮍ</div>
+    <div class="key" onclick="appendToOutput('Ꮓ')">Ꮓ</div>
+    <div class="key" onclick="appendToOutput('ᴀ')">ᴀ</div>
+    <div class="key" onclick="appendToOutput('ʙ')">ʙ</div>
+    <div class="key" onclick="appendToOutput('ᴄ')">ᴄ</div>
+    <div class="key" onclick="appendToOutput('ᴅ')">ᴅ</div>
+    <div class="key" onclick="appendToOutput('ᴇ')">ᴇ</div>
+    <div class="key" onclick="appendToOutput('ғ')">ғ</div>
+    <div class="key" onclick="appendToOutput('ɢ')">ɢ</div>
+    <div class="key" onclick="appendToOutput('ʜ')">ʜ</div>
+    <div class="key" onclick="appendToOutput('ɪ')">ɪ</div>
+    <div class="key" onclick="appendToOutput('ᴊ')">ᴊ</div>
+    <div class="key" onclick="appendToOutput('ᴋ')">ᴋ</div>
+    <div class="key" onclick="appendToOutput('ʟ')">ʟ</div>
+    <div class="key" onclick="appendToOutput('ᴍ')">ᴍ</div>
+    <div class="key" onclick="appendToOutput('ɴ')">ɴ</div>
+    <div class="key" onclick="appendToOutput('ᴏ')">ᴏ</div>
+    <div class="key" onclick="appendToOutput('ᴘ')">ᴘ</div>
+    <div class="key" onclick="appendToOutput('ǫ')">ǫ</div>
+    <div class="key" onclick="appendToOutput('ʀ')">ʀ</div>
+    <div class="key" onclick="appendToOutput('s')">s</div>
+    <div class="key" onclick="appendToOutput('ᴛ')">ᴛ</div>
+    <div class="key" onclick="appendToOutput('ᴜ')">ᴜ</div>
+    <div class="key" onclick="appendToOutput('ᴠ')">ᴠ</div>
+    <div class="key" onclick="appendToOutput('ᴡ')">ᴡ</div>
+    <div class="key" onclick="appendToOutput('x')">x</div>
+    <div class="key" onclick="appendToOutput('ʏ')">ʏ</div>
+    <div class="key" onclick="appendToOutput('ᴢ')">ᴢ</div>
+    <div class="key" onclick="appendToOutput('ㅤ')">Space</div>
+    <div class="key" onclick="clearOutput()">Clear</div>
+  </div>
